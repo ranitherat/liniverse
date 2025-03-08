@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+	overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+}
+
+.logo {
+    width: 600px; /* Adjust size as needed */
+}
+
+.logo-c {
+    margin-top: -200px;
+    width: 600px; /* Adjust size as needed */
+}
+
+.button {
+    transform: translate(0, 0);
+}
+
+.button img {
+    width: 200px; /* Adjust button size */
+    transition: transform 0.3s ease;
+}
+
+.button img:hover {
+    transform: scale(1.1);
+}
+
+/* Back button (Upper Left Corner) */
+.back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensures it stays on top */
+
+}
+.back img {
+    width: 100px; /* Change this to your preferred size */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+/* Back button (Upper Left Corner) */
+.back1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Ensures it stays on top */
+    transform: translate(0, 0);
+}
+    .back1 img {
+        margin-top: 70px;
+        width: 100px; /* Change this to your preferred size */
+        height: auto; /* Keeps the aspect ratio */
+        transition: transform 0.3s ease;
+    }
+
+    .back1 img:hover {
+        transform: scale(1.1);
+    }
+
+.shop-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-image {
+    width: 80%; /* Adjust size as needed */
+}
+
+.logo2 {
+    width: 400px; /* Adjust size as needed */
+    margin-bottom: -10px;
+}
+
+.logo3 {
+    width: 600px; /* Adjust size as needed */
+    margin-bottom: -50px;
+    padding-top: 160px;
+}
+
+.c-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%; /* Ensures full height */
+    object-fit: cover;
+}
+
+/* Characters Grid */
+.characters-grid {
+    padding-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px; /* Space between cards */
+    justify-items: center;
+    width: 90%; /* Adjust width as needed */
+    max-width: 1200px; /* Prevent it from getting too wide */
+    margin: 20px auto; /* Centering */
+    justify-content: center;
+
+}
+
+/* Character Card */
+.character-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image & button */
+    position: relative; /* Important for absolute button positioning */
+
+}
+
+/* Character Images */
+.character-card img {
+    width: 330px; /* Adjust card size */
+    height: auto;
+}
+
+/* Character Buttons */
+.char-button img {
+    width: 250px; /* Adjust button size */
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.char-button img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+	width: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .logo {
+        width: 400px;
+        margin-bottom: -10px;
+    }
+
+    .button img {
+        width: 200px; /* Smaller buttons on mobile */
+    }
+    .content { 
+    	gap:5px;
+    }
+    
+    .back img {
+        width: 80px; /* Smaller back button on mobile */
+        margin-top: 50px;
+    }
+    .about-image {
+        content: url("img/about-mobile.png"); /* Mobile version */
+        width: 70%; /* Adjust size for mobile */
+        max-width: 400px; /* Smaller max width */
+    }
+    .logo2 {
+    width: 300px; /* Adjust size as needed */
+    margin-bottom: -10px;
+	}
+	
+	.logo-c {
+    margin-top: -300px;
+    width: 400px; /* Adjust size as needed */
+	}
+
+	.characters-grid {
+		margin-top: -60px;
+		padding-top: 0px;
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+        position: relative; /* Ensures it doesn't get pushed outside */
+        justify-content: center;
+    }
+    .back1 img {
+    position: fixed;
+   	margin-top: 20px;
+    width: 70px; /* Change this to your preferred size */
+    height: auto; /* Keeps the aspect ratio */
+	}	
+	
+	.c-background {
+    content: url('img/noborder-bg.png'); 
+    background-size: cover;  /* Ensures the image fills the screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    width: 100vw;  /* Ensures it takes full width */
+    height: 100vh; /* Ensures it takes full height */
+    position: fixed; /* Keeps it in place even when scrolling */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Sends it to the background */
+	}
+	
+	.card {
+	width: 400px;
+	}
+
+}
