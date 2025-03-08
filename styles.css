@@ -78,7 +78,7 @@ body {
 
 /* Back button (Upper Left Corner) */
 .back1 {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     z-index: 10; /* Ensures it stays on top */
