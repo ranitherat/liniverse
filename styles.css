@@ -193,8 +193,10 @@ body {
     }
     .about-image {
         content: url("img/about-mobile.png"); /* Mobile version */
-        width: 70%; /* Adjust size for mobile */
+        width: 80%; /* Adjust size for mobile */
         max-width: 400px; /* Smaller max width */
+	justify-content: center;
+
     }
     .logo2 {
     width: 300px; /* Adjust size as needed */
