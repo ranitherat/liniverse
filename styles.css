@@ -188,6 +188,7 @@ body {
     .back img {
         width: 80px; /* Smaller back button on mobile */
         margin-top: 50px;
+	position: fixed;
     }
     .about-image {
         content: url("img/about-mobile.png"); /* Mobile version */
