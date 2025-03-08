@@ -104,6 +104,7 @@ body {
 
 .about-image {
     width: 80%; /* Adjust size as needed */
+	justify-content: center;
 }
 
 .logo2 {
