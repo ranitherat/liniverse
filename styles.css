@@ -199,25 +199,26 @@ body {
 
     }
     .logo2 {
-    width: 300px; /* Adjust size as needed */
-    margin-bottom: -10px;
+    	width: 400px; /* Adjust size as needed */
+    	margin-bottom: -15px; 
+	margin-top: -15px;
 	}
 	
 	.logo-c {
-    margin-top: -300px;
-    width: 400px; /* Adjust size as needed */
+    	margin-top: -300px;
+    	width: 400px; /* Adjust size as needed */
 	}
 
 	.characters-grid {
-		margin-top: -60px;
-		padding-top: 0px;
+	margin-top: -60px;
+	padding-top: 0px;
         grid-template-columns: repeat(1, 1fr); /* 1 card per row */
         position: relative; /* Ensures it doesn't get pushed outside */
         justify-content: center;
     }
     .back1 img {
     position: fixed;
-   	margin-top: 20px;
+   margin-top: 20px;
     width: 70px; /* Change this to your preferred size */
     height: auto; /* Keeps the aspect ratio */
 	}	
