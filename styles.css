@@ -129,7 +129,7 @@ body {
 
 /* Characters Grid */
 .characters-grid {
-    padding-top: 150px;
+    padding-top: 250px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
     gap: 20px; /* Space between cards */
@@ -221,7 +221,7 @@ body {
 	}
 
 	.characters-grid {
-	margin-top: -60px;
+	margin-top: -30px;
 	padding-top: 0px;
         grid-template-columns: repeat(1, 1fr); /* 1 card per row */
         position: relative; /* Ensures it doesn't get pushed outside */
